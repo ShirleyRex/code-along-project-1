@@ -5,112 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shirley Abaegbu | Website</title>
-    <link rel="stylesheet" href="./My-portfolio/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="My-portfolio/style.css">
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <h1 class="logo"><a href="">ShirleyRex</a></h1>
+    <div class="navigation">
+        <div class="banner">
+            <img src="My-portfolio/images/img2.jpeg" class="cover">
+        </div>
+        <div class="navLink">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="My-portfolio/about.html">About</a></li>
+                <li><a href="My-portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="My-portfolio/blog.html">Blog</a></li>
+                <li><a href="My-portfolio/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="My-portfolio/about.html">ABOUT</a></li>
-                    <li><a href="My-portfolio/portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="My-portfolio/blog.html">BLOG</a></li>
-                    <li><a href="My-portfolio/hire.html">HIRE ME</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="#" class="btn">Hire Me</a>
+        </header>
 
-        <div class="container">
-            <div class="content">
-                <h4>Hey There!</h4>
-                <h1>I am <span>Shirley Onyinyechi Abaegbu</span><br></h1>
-                <p>A frontend developer passionate about helping people<br>
-                    understand products by creating useful interfaces, 
-                    <br>and making accessible web applications.</p>
-                <button class="btn">DOWNLOAD CV</button>
-            </div>
-
-            <div class="image">
-                <img src="./My-portfolio/images/me2.jpeg" alt="">
-            </div>
+        <div class="imgBx">
+            <img src="My-portfolio/images/img1.jpeg" class="cover">
         </div>
 
-        
-        <div class="icons">
-            <i class="fa fa-github"><a href="https://github.com/ShirleyRex/"></a></i>
-            <i class="fa fa-twitter"></i><a href="https://twitter.com/rex_shirley"></a>
-            <i class="fa fa-instagram"><a href="https://www.instagram.com/shirley_rex/"></a></i>
-            <i class="fa fa-linkedin"><a href="https://www.linkedin.com/in/shirley-abaegbu/"></a></i>
+        <div class="content">
+            <h2>Hi, I am<br><span>Shirley Abaegbu</span></h2>
+            <p>A Frontend Developer passionate about helping people understand
+               products by creating useful interfaces, and making accessible web applications 
+            </p>
+            <a href="#" class="btn">Download My CV</a>
         </div>
-        
+
+        <footer>
+            <ul class="sci">
+                <li><a href="#"><img src="My-portfolio/images/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="My-portfolio/images/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="My-portfolio/images/instagram.png" alt=""></a></li>
+            </ul>
+            <p class="copyrightText">Shirley Abaegbu &copy; 2021</p>
+        </footer>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-    <!-- JavaScript for Toggle Menu -->
-<script>
-
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
-
-    function hideMenu() {
-        navLinks.style.right = "-200px";
-    }
-
-</script>
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec'); 
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-<a href="./Eduford/index.html">Eduford</a> -->
