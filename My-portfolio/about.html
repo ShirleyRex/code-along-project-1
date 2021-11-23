@@ -10,15 +10,15 @@
 <body>
     <div class="navigation">
         <div class="banner">
-            <img src="My-portfolio/images/img2.jpeg" class="cover">
+            <img src="images/img2.jpeg" class="cover">
         </div>
         <div class="navLink">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="My-portfolio/about.html">About</a></li>
-                <li><a href="My-portfolio/portfolio.html">Portfolio</a></li>
-                <li><a href="My-portfolio/blog.html">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -26,19 +26,24 @@
     <section class="sec">
         <header>
             <div class="toggle"></div>
-            <a href="#" class="btn">Hire Me</a>
+            <a href="My-portfolio/portfolio.html" class="btn">My Portfolio</a>
         </header>
 
         <div class="imgBx">
-            <img src="images/img1.jpeg" class="cover">
+            <img src="images/img3.jpeg" class="cover">
         </div>
 
         <div class="content">
             <h2>Hi, I am<br><span>Shirley Abaegbu</span></h2>
-            <p>A Frontend Developer passionate about helping people understand
-               products by creating useful interfaces, and making accessible web applications 
+            <p>I am a Frontend Developer passionate about the tech world 
+                and how to help people through it. I love building open and inclusive communities, 
+                I do this through the Open Source community Africa where I currently volunteer as a Chapter co-lead.
+                <br><br>I have background in Mathematics and Business Consulting. As a Business Consultant, 
+                I was thoroughly trained in people and program management, and as a Mathematics graduate, 
+                I have the ability to be a critical thinker and a problem solver. This background partly influenced my decision 
+                to developing interest in becoming a frontend developer, where I can utilise my knowledge properly. 
             </p>
-            <a href="#" class="btn">Download My CV</a>
+            <a href="SHIRLEY ONYINYECHI ABAEGBU.pdf" class="btn">Download My CV</a>
         </div>
 
         <footer>
@@ -50,6 +55,18 @@
             <p class="copyrightText">Shirley Abaegbu &copy; 2021</p>
         </footer>
     </section>
+
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec'); 
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active');
+        }
+    </script>
 
 </body>
 </html>

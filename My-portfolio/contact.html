@@ -7,24 +7,62 @@
     <title>Shirley Abaegbu | Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="navigation">
         <div class="banner">
-            <img src="My-portfolio/images/img2.jpeg" class="cover">
+            <img src="images/img2.jpeg" class="cover">
         </div>
         <div class="navLink">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="My-portfolio/about.html">About</a></li>
-                <li><a href="My-portfolio/portfolio.html">Portfolio</a></li>
-                <li><a href="My-portfolio/blog.html">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
 
-    <p>Contact</p>
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="portfolio.html" class="btn">My Portfolio</a>
+        </header>
 
+        <div class="contact-section">
+
+            <h1>Contact Me</h1>
+            <div class="border"></div>
+
+            <form class="contact-form" action="" method="post">
+                <input type="text" class="contact-form-text" placeholder="Your Name">
+                <input type="email" class="contact-form-text" placeholder="Your Email">
+                <input type="text" class="contact-form-text" placeholder="Your Phone">
+                <textarea class="contact-form-text" placeholder="message"></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
+
+            </form>
+        </div>
+
+        <footer>
+            <ul class="sci">
+                <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+                <li><a href="https://www.twitter.com/rex-shirley"><img src="images/twitter.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/shirley_rex/"><img src="images/instagram.png" alt=""></a></li>
+            </ul>
+            <p class="copyrightText">Shirley Abaegbu &copy; 2021</p>
+        </footer>
+    </section>
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec'); 
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

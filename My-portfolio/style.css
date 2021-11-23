@@ -200,6 +200,8 @@ header {
     background: #ffa500;
 }
 
+/*------ Footer ------*/
+
 footer {
     position: absolute;
     bottom: 0;
@@ -235,6 +237,98 @@ footer {
     letter-spacing: 1px;
 }
 
+/*------ Portfolio Page ------*/
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col img {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    font-size: 3vmin;
+    color: #ffa500;
+    margin: 5px auto;
+}
+
+p{
+    font-size: 10px;
+    padding: 5px;
+    color: #777;
+}
+.row .col .btn {
+    background: #ffa500;
+}
+
+/*------ Contact Page ------*/
+
+.contact-section {
+    background: #333 center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #ffa500;
+}
+
+.border {
+    width: 100px;
+    height: 10px;
+    background: #ffa500;
+    margin: 40px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #ffa500;
+}
+
+textarea.contact-form-text {
+    resize: none;
+}
+
+.contact-form-btn {
+    float: right;
+    border: 0;
+    background: #ffa500;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*------ Responsive ------*/
+
 @media (max-width: 991px) {
 
     .sec {
@@ -246,6 +340,7 @@ footer {
     header,
     footer {
         padding: 20px 40px;
+        height: 120px;
     }
 
     .sec .imgBx {
@@ -287,3 +382,5 @@ footer {
         margin-left: 50px;
     }
 }
+
+

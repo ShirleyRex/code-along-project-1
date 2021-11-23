@@ -10,20 +10,62 @@
 <body>
     <div class="navigation">
         <div class="banner">
-            <img src="My-portfolio/images/img2.jpeg" class="cover">
+            <img src="images/img2.jpeg" class="cover">
         </div>
         <div class="navLink">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="My-portfolio/about.html">About</a></li>
-                <li><a href="My-portfolio/portfolio.html">Portfolio</a></li>
-                <li><a href="My-portfolio/blog.html">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
 
-    <p>blog</p>
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="portfolio.html" class="btn">My Portfolio</a>
+        </header>
 
+        <div class="row">
+            <div class="col">
+                <a href="/Eduford/index.html"><img src="images/eduford.png" alt=""></a>
+                <h4>University Website</h4>
+                <h5>Designed with just HTML, CSS and JavaScript</h5>
+                <p>code-along project from YouTube</p>
+                <a href="/Eduford/index.html" class="btn">View</a>
+            </div>
+
+            <div class="col">
+                <a href="#"><img src="images/to-do-list.png" alt=""></a>
+                <h4>To-do-list</h4>
+                <h5>Designed with just HTML, CSS and JavaScript</h5>
+                <p>code-along project from YouTube</p>
+                <a href="#" class="btn">View</a>
+            </div>
+        </div>
+
+        <footer>
+            <ul class="sci">
+                <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+                <li><a href="https://www.twitter.com/rex-shirley"><img src="images/twitter.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/shirley_rex/"><img src="images/instagram.png" alt=""></a></li>
+            </ul>
+            <p class="copyrightText">Shirley Abaegbu &copy; 2021</p>
+        </footer>
+    </section>
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec'); 
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
