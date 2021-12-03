@@ -359,7 +359,7 @@ textarea.contact-form-text {
 @media (max-width: 991px) {
 
     .sec {
-        padding: 40px ;
+        padding: 40px;
         flex-direction: column;
         justify-content: center;
     }
