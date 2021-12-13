@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shirley Abaegbu | Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <div class="navigation">
         <div class="banner">
             <img src="images/img4.jpeg" class="cover">
-        </div>
+        </div> 
         <div class="navLink">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="My-portfolio/about.html">About</a></li>
+                <li><a href="My-portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="My-portfolio/blog.html">Blog</a></li>
+                <li><a href="My-portfolio/contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -26,41 +26,47 @@
     <section class="sec">
         <header>
             <div class="toggle"></div>
-            <a href="portfolio.html" class="btn">My Portfolio</a>
+            <a href="My-portfolio/portfolio.html" class="btn">My Portfolio</a>
         </header>
-
-        <div class="contact-section">
-
-            <h1>Contact Me</h1>
-            <div class="border"></div>
-
-            <form class="contact-form" action="" method="post">
-                <input type="text" class="contact-form-text" placeholder="Your Name">
-                <input type="email" class="contact-form-text" placeholder="Your Email">
-                <input type="text" class="contact-form-text" placeholder="Your Phone">
-                <textarea class="contact-form-text" placeholder="message"></textarea>
-                <input type="submit" class="contact-form-btn" value="Send">
-            </form>
-        </div>
-
-        <footer>
-            <ul class="sci">
-                <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
-                <li><a href="https://www.twitter.com/rex-shirley"><img src="images/twitter.png" alt=""></a></li>
-                <li><a href="https://www.instagram.com/shirley_rex/"><img src="images/instagram.png" alt=""></a></li>
-            </ul>
-            <p class="copyrightText">Shirley Abaegbu &copy; 2021</p>
-        </footer>
     </section>
 
+    <section class="contact">
+        <div class="row">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="row">
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <textarea>Enter your message</textarea>
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="sci">
+            <li><a href="https://www.linkedin.com/in/shirley-abaegbu"><box-icon name='linkedin-square' type='logo' ></box-icon></a></li>
+            <li><a href="https://github.com/ShirleyRex/"><box-icon name='github' type='logo' ></box-icon></a></li>
+            <li><a href="https://twitter.com/rex_shirley"><box-icon name='twitter' type='logo' ></box-icon></a></li>
+            <li><a href="https://www.facebook.com/Shirleyrex"><box-icon type='logo' name='meta'></box-icon></a></li>
+            <li><a href="https://www.instagram.com/shirley_rex/"><box-icon name='instagram' type='logo' ></box-icon></a></li>
+        </ul>
+        <p class="copyrightText">Shirley Abaegbu &copy; 2021</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
     <script>
         let menuToggle = document.querySelector('.toggle');
         let navigation = document.querySelector('.navigation');
-        let sec = document.querySelector('.sec'); 
-        menuToggle.onclick = function(){
+        let sec = document.querySelector('.sec');
+        let footer = document.querySelector('footer');
+        menuToggle.onclick = function() {
             menuToggle.classList.toggle('active');
             navigation.classList.toggle('active');
             sec.classList.toggle('active');
+            footer.classList.toggle('active');
         }
     </script>
 </body>
