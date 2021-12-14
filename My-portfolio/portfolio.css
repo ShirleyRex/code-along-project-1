@@ -55,7 +55,7 @@ small a:hover {
 .row {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 30%;
   align-items: center;
   margin: auto;
 }
@@ -202,23 +202,17 @@ header {
 
 section {
   padding: 50px 0;
-  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
 }  
 
-.content,
-.content,
 .content {
-  flex-basis: 30%;
   padding: 16px;
 }
 
 .row .btn {
   background: #ffa500;
   margin: 2px;
-}
-
-.content2 {
-  flex-basis: 30%;
 }
 
 /* Footer */
