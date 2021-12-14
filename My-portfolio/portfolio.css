@@ -21,7 +21,7 @@ a {
 h1,
 h2,
 small {
-  margin: 5px auto;
+  margin: 0 auto;
 }
 
 h1 {
@@ -48,10 +48,16 @@ small a:hover {
 }
 
 .row img {
-  width: 80%;
+  width: 100%;
+  height: auto;
+}
+
+.row {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
   align-items: center;
+  margin: auto;
 }
 
 /* Hero Section */
@@ -189,30 +195,30 @@ header {
   font-weight: 500;
   border-radius: 4px;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* Portfolio */
 
-.row1,
-.row2 {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  align-items: center;
-  margin: auto;
+section {
+  padding: 50px 0;
+  flex-direction: column;
+}  
+
+.content,
+.content,
+.content {
+  flex-basis: 30%;
+  padding: 16px;
 }
 
-.row .col {
-  margin-top: 100px;
-}
-
-.row .col .btn {
+.row .btn {
   background: #ffa500;
-  margin: 5px auto;
-  padding: 5px 15px;
-  font-size: 12px;
-  justify-content: space-between;
+  margin: 2px;
+}
 
+.content2 {
+  flex-basis: 30%;
 }
 
 /* Footer */
@@ -297,16 +303,14 @@ footer.active {
   }
 
   /* Portfolio */
-  .row {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    padding: 70px 0;
-}
 
-.row .col {
-    padding: 30px;
-}
-}
+  .row {
+    position: relative;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}  
+
+  
